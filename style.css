@@ -160,7 +160,7 @@ html {
   background: rgba(241,136,40,0.15);
 }
 
-/* ========== БОЛЬШИЕ ЭКРАНЫ (больше 1400px) ========== */
+/* 1400px большие экраны */
 @media (min-width: 1400px) {
   body {
     background-attachment: fixed;
@@ -175,7 +175,7 @@ html {
   }
 }
 
-/* ========== НОУТБУКИ И СРЕДНИЕ ЭКРАНЫ (1100px и меньше) ========== */
+/* ноуты 1100px */
 @media (max-width: 1100px) {
 
   .nav a {
@@ -187,7 +187,7 @@ html {
   }
 }
 
-/* ========== ПЛАНШЕТЫ (900px и меньше) ========== */
+/* хз 900px */
 @media (max-width: 900px) {
 
   header {
@@ -213,7 +213,7 @@ html {
   }
 }
 
-/* ========== ТЕЛЕФОНЫ (700px и меньше) ========== */
+/* телефончики 700px */
 @media (max-width: 700px) {
 
   body {
@@ -255,7 +255,7 @@ html {
   }
 }
 
-/* ========== ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (480px и меньше) ========== */
+/* Пузатая мелочь 480px */
 @media (max-width: 480px) {
   .nav {
     flex-direction: column;
@@ -263,5 +263,48 @@ html {
 
   .nav a {
     display: block;
+  }
+}
+
+/* 🖥️ можорки 2560px+ */
+@media (min-width: 2560px) {
+
+  body {
+    font-size: 22px;
+  }
+
+  header {
+    padding: 30px 80px;
+  }
+
+  .header-logo {
+    height: 48px;
+  }
+
+  .nav a {
+    font-size: 22px;
+    padding: 10px 14px;
+    border-radius: 6px;
+  }
+
+  .server-ip-btn {
+    font-size: 18px;
+    padding: 10px 18px;
+    border-radius: 10px;
+  }
+
+  .copy-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  main {
+    max-width: 1800px;
+    margin: 0 auto;
   }
 }
