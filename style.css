@@ -18,6 +18,11 @@ body {
   color: #fff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -153,4 +158,110 @@ html {
 .server-ip-btn.copied {
   box-shadow: 0 0 14px rgba(241,136,40,0.9);
   background: rgba(241,136,40,0.15);
+}
+
+/* ========== БОЛЬШИЕ ЭКРАНЫ (больше 1400px) ========== */
+@media (min-width: 1400px) {
+  body {
+    background-attachment: fixed;
+  }
+
+  header {
+    padding: 24px 80px;
+  }
+
+  .nav a {
+    font-size: 20px;
+  }
+}
+
+/* ========== НОУТБУКИ И СРЕДНИЕ ЭКРАНЫ (1100px и меньше) ========== */
+@media (max-width: 1100px) {
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  .server-ip-btn {
+    font-size: 13px;
+  }
+}
+
+/* ========== ПЛАНШЕТЫ (900px и меньше) ========== */
+@media (max-width: 900px) {
+
+  header {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-left {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  main {
+    height: auto;
+    min-height: calc(100vh - 140px);
+  }
+}
+
+/* ========== ТЕЛЕФОНЫ (700px и меньше) ========== */
+@media (max-width: 700px) {
+
+  body {
+    background-position: center;
+  }
+
+  header {
+    padding: 12px 16px;
+  }
+
+  .header-logo {
+    height: 26px;
+  }
+
+  .nav a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  .header-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .server-ip-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  .socials a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* ========== ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (480px и меньше) ========== */
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav a {
+    display: block;
+  }
 }
